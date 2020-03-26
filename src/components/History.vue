@@ -60,7 +60,7 @@ export default {
   methods: {
     getHistory() {
       this.$axios.get("http://www.dzyong.top:3005/yiqing/history").then(res => {
-        this.historys = res.data.data;
+        this.historys = [...res.data.data].reverse();
         for (let historyST = 0; historyST < this.historys.length; historyST++) {
           this.date.push(res.data.data[historyST].date);
           this.confirmedNum.push(res.data.data[historyST].confirmedNum);
