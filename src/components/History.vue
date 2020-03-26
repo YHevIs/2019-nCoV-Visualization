@@ -5,7 +5,7 @@
     <div class="historyMain" style="display:flex">
       <el-timeline style="max-h">
         <el-timeline-item
-          v-for="history in historys"
+          v-for="history in historys.reverse()"
           :key="history.index"
           :timestamp="history.date"
           placement="top"
