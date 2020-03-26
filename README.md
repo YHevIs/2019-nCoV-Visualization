@@ -1,4 +1,4 @@
-# wuhan2020
+# 2019-nCoV Visualization
 
 ## Project setup
 ```
